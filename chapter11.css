@@ -1,0 +1,298 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.vessel{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/* =====================
+  Header
+===================== */
+
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #ec715f;
+}
+
+.logo{
+	height: 70px;
+	float: left;
+}
+
+.nav{
+	float:right;
+}
+
+.nav-list{
+	float: left;
+	list-style: none;
+	width: 120px;
+	line-height: 70px;
+	padding: 0 30px;
+	color: #fafafa;
+	font-size: 16px;
+}
+
+/* =====================
+  MainVisual
+===================== */
+
+.mainvisual{
+	width: 100%;
+	height: 650px;
+	color: #fafafa;
+	background-image: url(img/mv.png);
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+}
+
+.mainvisual-title{
+	padding-top: 200px;
+	font-size: 64px;
+}
+
+.mainvisual-text{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+/* =====================
+  Portfolio
+===================== */
+
+#portfolio{
+	background-color: #eceff1;
+}
+.head{
+	font-size: 32px;
+	padding-top: 90px;
+	text-align: center;
+	color: #000000;
+}
+.head::after{
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	margin: 8px auto 0 auto;
+	background-color: #ec715f;
+}
+.head-text{
+	font-size: 16px;
+	color: #000000;
+	padding-top: 30px;
+	text-align: center;
+}
+.pictures{
+	width: 920px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.picture{
+	float: left;
+	width: 300px;
+	height: 250px;
+	margin: 10px 10px 0 0;
+	background-size: cover;
+	background-position: bottom;
+}
+.picture:nth-child(-n+3){
+	margin-top: 0;
+}
+.picture:nth-child(3n){
+	margin-right: 0;
+}
+.no1{
+	background-image: url(img/sketch.jpg);
+}
+.no2{
+	background-image: url(img/websuku.png);
+}
+.no3{
+	background-image: url(img/write.jpg);
+}
+.no4{
+	background-image: url(img/webcamp.png);
+}
+.no5{
+	background-image: url(img/talk.jpg);
+}
+.no6{
+	background-image: url(img/webcamp-mother.png);
+}
+
+/* =====================
+  Feature
+===================== */
+
+#feature{
+	background-size: cover;
+	background-position: center;
+}
+.topics{
+	width: 980px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.topic{
+	width: 320px;
+	text-align: center;
+	font-size: 60px;
+	margin-right: 10px;
+	float: left;
+}
+.topic:last-child{
+	margin-right: 0;
+}
+.topic-title{
+	padding: 10px 0;
+	font-size: 20px;
+}
+.topic-text{
+	text-align: left;
+	font-size: 16px;
+	color: #000000;
+}
+
+/* =====================
+  Profile
+===================== */
+
+#profile{
+	background-color: #eceff1;
+}
+.profile-box{
+	padding: 30px 0 90px 0;
+}
+.img-zone{
+	width: 512px;
+	float: left;
+}
+.text-zone{
+	width: 512px;
+	float: right;
+}
+.face{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-image: url(img/my-icon.jpg);
+}
+.topic-tilte{
+	font-size: 20px;
+	margin: 20px 0 5px 0;
+}
+.topic-tilte:first-child{
+	margin-top: 0;
+}
+.topic-text{
+	font-size: 16px;
+	color: #000000;
+}
+
+/* =====================
+  Contact
+===================== */
+
+.contact-box{
+	width: 800px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+.mail-tell{
+	width: 400px;
+	float:left;
+}
+.mail-tell-box{
+	width: 130px;
+	margin: 0 auto;
+}
+.sns{
+	width: 400px;
+	float: right;
+}
+.sns-box{
+	width: 200px;
+	margin: 0 auto;
+}
+.sns i {
+	font-size: 50px;
+	margin-right: 20px;
+}
+.sns i:last-child{
+	margin-right: 0;
+}
+.mail-tell-box .topic-text{
+	text-decoration: underline;
+}
+
+/* =====================
+  Footer
+===================== */
+
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #ec715f;
+}
+.copyright{
+	font-size: 16px;
+	line-height: 60px;
+	color: #fafafa;
+	text-align: center;
+}
+
+/* ========================================================================
+  Media Queries
+======================================================================== */
+
+@media screen and (max-width: 767px) {
+	header{
+		height: 50px;
+	}
+	main{
+		width: 90%;
+	}
+	header img{
+		height: 50px;
+		float: none;
+	}
+	#humberger{
+		float: right;
+		height: 40px;
+		width: 40px;
+		margin-right: 5%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border: 1px solid #fafafa;
+	}
+	#humberger div{
+		height: 2px;
+		width: 25px;
+		margin: 5px auto;
+		background-color: #fafafa;
+		display: block;
+	}
+	#humberger div:first-child{
+		margin-top: 10px;
+	}
+	nav{
+		display: none;
+	}
+}
+
+
+
